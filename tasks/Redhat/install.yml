@@ -17,3 +17,10 @@
   notify: 'Restart Plex Media Server'
   when: not plex_media_server_manage_repo
   become: yes
+
+- name: 'Remove RPM providied YUM Repository file'
+  file:
+    path: '/etc/yum.repos.d/plex.repo'
+    state: absent
+  when: plex_media_server_manage_repo
+  become: true
