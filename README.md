@@ -1,4 +1,4 @@
-plex-media-server (Software Collections Linux)
+plex-media-server ( Plex Media Server )
 ===
 [![Ansible Galaxy](https://img.shields.io/badge/ansible--galaxy-smbambling.plex-media-server-blue.svg)](https://galaxy.ansible.com/smbambling/plex-media-server/)
 [![Build Status](https://travis-ci.org/smbambling/ansible-role-plex-media-server.svg?branch=master)](https://travis-ci.org/smbambling/ansible-role-plex-media-server)
