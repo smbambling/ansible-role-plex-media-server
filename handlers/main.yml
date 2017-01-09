@@ -1,0 +1,5 @@
+---
+- name: Restart Plex Media Server
+  service:
+    name: "{{ plex_media_server_service }}"
+    state: "{{ plex_media_server_restart_state }}"

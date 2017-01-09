@@ -1,0 +1,14 @@
+---
+- name: "Manage Plex APT Signing Key"
+  apt_key:
+    url: "https://downloads.plex.tv/plex-keys/PlexSign.key"
+    state: present
+  become: true
+
+- name: "Manage Plex Media Server APT Repository"
+  apt_repository:
+    repo: deb https://downloads.plex.tv/repo/deb/ public main
+    state: present
+    filename: 'plexmediaserver'
+  become: true
+

@@ -1,0 +1,13 @@
+---
+plex_media_server_manage_repo: yes
+
+plex_media_server_group: plex
+plex_media_server_user: plex
+
+plex_media_server_manage_service: yes
+plex_media_server_state: started
+plex_media_server_restart_state: started
+plex_media_server_enabled: yes
+
+# Release Date: December 15, 2016 ??
+plex_media_server_version: 1.3.3.3165-ed2f710

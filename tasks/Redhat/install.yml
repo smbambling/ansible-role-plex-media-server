@@ -1,0 +1,19 @@
+---
+# Include Plex Media Server YUM Repository
+- include: "repo.yml"
+
+- name: Install Plex Media Server from YUM Repository
+  yum:
+    name: "{{ plex_media_server_service }}-{{ plex_media_server_version }}"
+    state: present
+  notify: 'Restart Plex Media Server'
+  when: plex_media_server_manage_repo
+  become: true
+
+- name: Install Plex Media Server from RPM
+  yum:
+    name: "https://downloads.plex.tv/plex-media-server/{{ plex_media_server_version }}/plexmediaserver-{{ plex_media_server_version}}.x86_64.rpm"
+    state: present
+  notify: 'Restart Plex Media Server'
+  when: not plex_media_server_manage_repo
+  become: yes

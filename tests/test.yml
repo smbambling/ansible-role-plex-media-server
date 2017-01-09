@@ -1,0 +1,8 @@
+---
+- hosts: all
+
+  vars:
+    plex_media_server_manage_service: no
+
+  roles:
+    - role: ansible-role-plex-media-server

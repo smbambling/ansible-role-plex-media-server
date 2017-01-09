@@ -1,0 +1,10 @@
+---
+- name: "Manage Plex Media Server Repository"
+  yum_repository:
+    name: "PlexRepo"
+    file: "plex"
+    description: "PlexRepo"
+    baseurl: "https://downloads.plex.tv/repo/rpm/$basearch/"
+    gpgkey: "https://downloads.plex.tv/plex-keys/PlexSign.key"
+    gpgcheck: yes
+    enabled: yes
