@@ -26,7 +26,6 @@ docker:
       #    - name: ubuntu1604
       #      image: ubuntu
       #      image_version: '16.04'
-      #      privileged: True
       #    - name: ubuntu1610
       #      image: ubuntu
       #      image_version: '16.10'
