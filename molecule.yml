@@ -20,13 +20,13 @@ docker:
     - name: centos6
       image: centos
       image_version: '6'
-    - name: centos7
-      image: centos
-      image_version: '7'
-    - name: ubuntu1604
-      image: ubuntu
-      image_version: '16.04'
-      privileged: True
-    - name: ubuntu1610
-      image: ubuntu
-      image_version: '16.10'
+      #    - name: centos7
+      #      image: centos
+      #      image_version: '7'
+      #    - name: ubuntu1604
+      #      image: ubuntu
+      #      image_version: '16.04'
+      #      privileged: True
+      #    - name: ubuntu1610
+      #      image: ubuntu
+      #      image_version: '16.10'
