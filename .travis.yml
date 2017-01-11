@@ -35,6 +35,7 @@ install:
   - ansible --version
   - pip install molecule==$MOLECULE_VERSION
   - pip install docker-py==$DOCKER_PY_VERSION
+  - pip install python-vagrant
   - gem install bundler
   - bundle install --path vendor/bundle
 
