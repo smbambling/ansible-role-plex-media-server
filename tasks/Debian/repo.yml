@@ -1,7 +1,19 @@
 ---
+- name: "Install wget package"
+  apt:
+    name=wget
+    state=present
+  become: true
+
 - name: "Manage Plex APT Signing Key"
   apt_key:
     url: "https://downloads.plex.tv/plex-keys/PlexSign.key"
+    state: present
+  become: true
+
+- name: "Install apt-transport-https package"
+  apt:
+    name: apt-transport-https
     state: present
   become: true
 

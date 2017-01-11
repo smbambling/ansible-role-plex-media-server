@@ -19,6 +19,8 @@ services:
   - docker
 
 before_install:
+  - sudo apt-get update -qq
+  - sudo apt-get install -y libvirt-dev
   - rvm get stable --auto-dotfiles
   - rvm default
   - ruby -v
@@ -37,4 +39,4 @@ install:
   - bundle install --path vendor/bundle
 
 script:
-  - bundle exec molecule test
+  - bundle exec molecule create
