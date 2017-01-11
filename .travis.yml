@@ -21,6 +21,7 @@ services:
 before_install:
   - sudo apt-get update -qq
   - sudo apt-get install -y libvirt-dev
+  - sudo apt-get install -y vagrant
   - rvm get stable --auto-dotfiles
   - rvm default
   - ruby -v
